@@ -62,14 +62,13 @@ void aux_help_general(void)
 	help = "unsetenv [variable]\n;
 	write(STDOUT_FILENO, help, _strlen(help));
 }
-
 /**
- * aux_help_exit - help information for the builtin exit
- * Return: no return
- */
+* aux_help_exit - help information for the builtin exit
+* Return: no return
+*/
 void aux_help_exit(void)
 {
-	char *help = "exit: exit [n]\n Exit shell.\n";
+	char *help = "exit : exit[n]\n Exit shell.\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "Exits the shell with a status of N. If N is ommited, the exit";
